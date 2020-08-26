@@ -12,6 +12,8 @@
 		2626DD6A24F53A040083CF18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2626DD6824F53A040083CF18 /* Main.storyboard */; };
 		2626DD6C24F53A040083CF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2626DD6B24F53A040083CF18 /* Assets.xcassets */; };
 		2626DD6F24F53A040083CF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2626DD6D24F53A040083CF18 /* LaunchScreen.storyboard */; };
+		264D09BB24F6A7C800CBF4E4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264D09BA24F6A7C800CBF4E4 /* AboutViewController.swift */; };
+		264D09BD24F6B20500CBF4E4 /* AuthorMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264D09BC24F6B20500CBF4E4 /* AuthorMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		2626DD6B24F53A040083CF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2626DD6E24F53A040083CF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2626DD7024F53A040083CF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264D09BA24F6A7C800CBF4E4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		264D09BC24F6B20500CBF4E4 /* AuthorMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorMeViewController.swift; sourceTree = "<group>"; };
+		264D09BE24F6C0CC00CBF4E4 /* BullsEye.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +59,12 @@
 		2626DD6324F53A040083CF18 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				264D09BE24F6C0CC00CBF4E4 /* BullsEye.html */,
 				2626DD6424F53A040083CF18 /* AppDelegate.swift */,
 				2626DD6624F53A040083CF18 /* ViewController.swift */,
 				2626DD6824F53A040083CF18 /* Main.storyboard */,
+				264D09BC24F6B20500CBF4E4 /* AuthorMeViewController.swift */,
+				264D09BA24F6A7C800CBF4E4 /* AboutViewController.swift */,
 				2626DD6B24F53A040083CF18 /* Assets.xcassets */,
 				2626DD6D24F53A040083CF18 /* LaunchScreen.storyboard */,
 				2626DD7024F53A040083CF18 /* Info.plist */,
@@ -136,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				264D09BB24F6A7C800CBF4E4 /* AboutViewController.swift in Sources */,
 				2626DD6724F53A040083CF18 /* ViewController.swift in Sources */,
 				2626DD6524F53A040083CF18 /* AppDelegate.swift in Sources */,
+				264D09BD24F6B20500CBF4E4 /* AuthorMeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
