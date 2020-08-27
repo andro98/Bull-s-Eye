@@ -11,7 +11,7 @@ import WebKit
 
 class AboutViewController: UIViewController {
     
-    @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var webView: WKWebView!
 
     @IBAction func close(){
         dismiss(animated: true, completion: nil)
@@ -19,16 +19,28 @@ class AboutViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let url = Bundle.main.url(forResource: "BullsEye", withExtension: "html"){
-            if let htmlData = try? Data(contentsOf: url){
-                let baseURL = URL(fileURLWithPath: Bundle.main.bundlePath)
-                webView.load(htmlData, mimeType:"text/html", textEncodingName:"UTF-8", baseURL: baseURL)
-            }
+       
+        if let url = Bundle.main.url(forResource: "index", withExtension: "html"){
+            webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
         }
+        
+        /* let url = Bundle.main.url(forResource: "BullsEye", withExtension: "html")!
+        webView.loadFileURL(url, allowingReadAccessTo: url)
+        let request = URLRequest(url: url)
+        webView.load(request)
+        */
+        /*let htmlPath = Bundle.main.path(forResource: "BullsEye", ofType: "html")
+        print(htmlPath!)
+        let url = URL(fileURLWithPath: htmlPath!)
+        let request = URLRequest(url: url)
+        webView.load(request)*/
+    
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 }
+
+
+

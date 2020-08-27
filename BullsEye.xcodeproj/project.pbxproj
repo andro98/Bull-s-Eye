@@ -24,9 +24,9 @@
 		2626DD6B24F53A040083CF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2626DD6E24F53A040083CF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2626DD7024F53A040083CF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264AAB8724F7D1EA00DE87DD /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = index.html; path = BullsEye/index.html; sourceTree = SOURCE_ROOT; };
 		264D09BA24F6A7C800CBF4E4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		264D09BC24F6B20500CBF4E4 /* AuthorMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorMeViewController.swift; sourceTree = "<group>"; };
-		264D09BE24F6C0CC00CBF4E4 /* BullsEye.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,8 @@
 		2626DD6324F53A040083CF18 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
-				264D09BE24F6C0CC00CBF4E4 /* BullsEye.html */,
+				264AAB8724F7D1EA00DE87DD /* index.html */,
+				264AAB8624F7D1D900DE87DD /* pages */,
 				2626DD6424F53A040083CF18 /* AppDelegate.swift */,
 				2626DD6624F53A040083CF18 /* ViewController.swift */,
 				2626DD6824F53A040083CF18 /* Main.storyboard */,
@@ -70,6 +71,13 @@
 				2626DD7024F53A040083CF18 /* Info.plist */,
 			);
 			path = BullsEye;
+			sourceTree = "<group>";
+		};
+		264AAB8624F7D1D900DE87DD /* pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
