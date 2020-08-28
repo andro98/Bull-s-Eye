@@ -9,6 +9,7 @@ Bull's Eye is a game for IOS, where you simply need to move the slider closer to
   <li>Icons and Images</li>
   <li>Custom UI from swift code</li>
   <li>Navigation and Routing</li>
+  <li>Closures and CallBack Functions</li>
   <li>Displaying Alerts</li>
   <li>Tips and Shortcuts in Xcode</li>
 </ul>
@@ -21,6 +22,9 @@ Bull's Eye is a game for IOS, where you simply need to move the slider closer to
 <img src="/srcs/im2.png">
 <img src="/srcs/im3.png">
 <img src="/srcs/im4.png">
+
+### About Us
+<img src="/srcs/im6.png">
 
 ### About Author
 <img src="/srcs/im1.png">
