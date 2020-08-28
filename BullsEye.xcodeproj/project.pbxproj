@@ -60,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				264AAB8724F7D1EA00DE87DD /* index.html */,
-				264AAB8624F7D1D900DE87DD /* pages */,
 				2626DD6424F53A040083CF18 /* AppDelegate.swift */,
 				2626DD6624F53A040083CF18 /* ViewController.swift */,
 				2626DD6824F53A040083CF18 /* Main.storyboard */,
@@ -71,13 +70,6 @@
 				2626DD7024F53A040083CF18 /* Info.plist */,
 			);
 			path = BullsEye;
-			sourceTree = "<group>";
-		};
-		264AAB8624F7D1D900DE87DD /* pages */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

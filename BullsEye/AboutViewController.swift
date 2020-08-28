@@ -11,6 +11,32 @@ import WebKit
 
 class AboutViewController: UIViewController {
     
+    let htmlString = """
+                        <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                        <title>Bull's Eye</title>
+                        <meta charset="utf-8">
+                        <style type="text/css">
+                        html { background: #faeecd; }
+                        body { color: #000; font: 16px "Arial Rounded MT Bold", Helvetica; }
+                        h1 { text-align: center; color: rgb(96, 30, 0); font-size: 24px; font-weight: bold; }
+                        </style>
+                        </head>
+                        <body>
+
+                        <h1>★ Bull's Eye ★</h1>
+
+                        <p>This is the awesome game of Bull's Eye where you can win points and earn fame by dragging a slider.</p>
+
+                        <p>Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score.</p>
+
+                        <p style="text-align:center"><em>Enjoy!</em></p>
+
+                        </body>
+                        </html>
+    """
+    
     @IBOutlet weak var webView: WKWebView!
 
     @IBAction func close(){
@@ -20,21 +46,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        if let url = Bundle.main.url(forResource: "index", withExtension: "html"){
-            webView.loadFileURL(url, allowingReadAccessTo: url.deletingLastPathComponent())
-        }
-        
-        /* let url = Bundle.main.url(forResource: "BullsEye", withExtension: "html")!
-        webView.loadFileURL(url, allowingReadAccessTo: url)
-        let request = URLRequest(url: url)
-        webView.load(request)
-        */
-        /*let htmlPath = Bundle.main.path(forResource: "BullsEye", ofType: "html")
-        print(htmlPath!)
-        let url = URL(fileURLWithPath: htmlPath!)
-        let request = URLRequest(url: url)
-        webView.load(request)*/
-    
+        webView.loadHTMLString(htmlString, baseURL: nil)
     }
 
     override func didReceiveMemoryWarning() {
